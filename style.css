@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrap .container #quote {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+body {
+  background: url(img/michaelscott.jpg);
+  background-size: cover;
+  background-position: 65%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.wrap .container {
+  width: 60%;
+  /* margin: 0 auto; */
+  text-align: left;
+  padding: 0.3em;
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  right: 0;
+}
+
+.sources {
+  text-align: right;
+}
+
+/* #button {
+  position: absolute;
+  text-align: center;
+
+  left: 2em;
+  right: 2em;
+} */
+
+.buttons {
+  padding: 0.5em;
+  font-size: 1.7em;
+  margin: 0 0.5em;
+  position: absolute;
+  top: 50%;
+  /* left: 5%; */
+}
+.buttons #button:hover {
+  /* background: #000; */
+  cursor: pointer;
+  /* border-radius: 50%; */
+  transform: scale(1.5);
+}
+
+.buttons #tweetBtn:hover {
+  /* background: #000; */
+  color: #00bfff;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  transform: scale(1.5);
+}
+
+#button {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  /* background: #696969; */
+  margin: 10px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  /* border-radius: 50%; */
+  position: relative;
+  overflow: hidden;
+  font-size: 28px;
+  transition: 0.3s ease-in-out;
+}
+
+#tweetBtn {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  /* background: #696969; */
+  margin: 10px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  /* border-radius: 90%; */
+  position: relative;
+  overflow: hidden;
+  font-size: 28px;
+  transition: 0.3s ease-in-out;
+}
+
+#quote {
+  color: #fff;
+  position: absolute;
+  top: 10%;
+}
+
+#person {
+  font-size: 1.5em;
+  color: #fff;
+  position: fixed;
+  top: 40%;
+  left: 25%;
+}
+
+.sources {
+  margin-top: 3em;
+}
