@@ -18,6 +18,10 @@ body {
   bottom: 0;
 }
 
+a:visited {
+  color: white
+}
+
 .wrap .container {
   width: 60%;
   /* margin: 0 auto; */
@@ -46,8 +50,8 @@ body {
   font-size: 1.7em;
   margin: 0 0.5em;
   position: absolute;
-  top: 50%;
-  /* left: 5%; */
+  top: 40%;
+  left: 2%;
 }
 .buttons #button:hover {
   /* background: #000; */
@@ -98,20 +102,28 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-#quote {
+#quote, #person {
   color: #fff;
-  position: absolute;
-  top: 10%;
+  font-size: 1.5em;
 }
 
 #person {
   font-size: 1.5em;
   color: #fff;
-  position: fixed;
-  top: 40%;
-  left: 25%;
 }
 
 .sources {
   margin-top: 3em;
+}
+
+@media screen and (min-width: 624px) {
+  #person {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  #quote {
+    width: 600px
+  }
 }

@@ -1,4 +1,4 @@
-var mod = (function() {
+var mod = (function () {
   var quotes = [
     {
       quote: "Sorry I annoyed you with my friendship.",
@@ -28,9 +28,6 @@ var mod = (function() {
   var twitterBtn = document.getElementById("twitter");
   var button = document.getElementById("button");
 
-  // var source = document.getElementByClassName("source");
-
-  // invokes eventlistner
   button.addEventListener("click", runEvent);
   twitterBtn.addEventListener("click", tweet);
 
@@ -39,14 +36,13 @@ var mod = (function() {
 
     document.getElementById("quote").innerHTML = quote;
     document.getElementById("person").innerHTML = person;
-    //   document.getElementById("person").innerHTML;
   }
 
   function tweet() {
     return twitterBtn.setAttribute(
       "href",
       `https://twitter.com/intent/tweet?text=${quote.innerHTML} ${
-        person.innerHTML
+      person.innerHTML
       }`
     );
   }
